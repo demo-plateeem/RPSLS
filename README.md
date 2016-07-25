@@ -13,7 +13,7 @@
 + 刚好学习了jQuery,就用上了
 + 事件绑定
 + 匿名函数
-+ css style的获取(大坑,不过填得差不多了)[css-style](../cssstyle/css-style.md)
++ css style的获取(大坑,不过填得差不多了)[css-style](./css-style.md)
 
 ### 怎么获胜了?
 
