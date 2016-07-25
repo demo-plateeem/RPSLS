@@ -1,0 +1,72 @@
+html, body {
+  margin: 0;
+  padding: 0; }
+
+#demo {
+  border: 1px solid silver;
+  width: 800px;
+  margin: 0 auto; }
+
+#result {
+  display: flex;
+  border: 1px solid green;
+  height: 150px;
+  justify-content: space-around; }
+  #result div {
+    border: 1px solid red;
+    padding: 0 30px;
+    text-align: center; }
+    #result div img {
+      border: 1px solid gold;
+      width: 50px;
+      height: 50px;
+      border-radius: 50px; }
+
+.flex-item span {
+  margin: 30px;
+  border-top: 3px solid silver;
+  font-size: 2.5rem;
+  font-weight: 800;
+  display: block; }
+
+.win {
+  transform: scale(3); }
+
+.lost {
+  transform: rotate(90deg);
+  transfrom-origin: 0 0; }
+
+#console {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto; }
+
+button {
+  border: 2px solid green;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px; }
+
+button:hover {
+  box-shadow: 1px 1px 0 white, 2px 2px 0 white, 3px 3px 0 white, 4px 4px 2px red; }
+
+button:focus {
+  outline: unset; }
+
+#choice1 {
+  background-image: url(../img/rock.png); }
+
+#choice2 {
+  background-image: url(../img/Sorssicer.png); }
+
+#choice3 {
+  background-image: url(../img/Spark.png); }
+
+#choice4 {
+  background-image: url(../img/lizard.png); }
+
+#choice5 {
+  background-image: url(../img/paper.png); }
+
+/*# sourceMappingURL=main-1.css.map */
