@@ -24,13 +24,13 @@
 
 ### 方法更新
 
-之前采用了搜寻关键字符: src.search(/rock/i)来获取参考字符的index number.因为是src是变动的,在出其它的时候,如布,就不能在src中匹配到rock,下面的switch会跳到default语句.
+之前采用了搜寻关键字符: `src.search(/rock/i)`来获取参考字符的*index number*.因为是*src*是变动的,在出其它的时候,如布,就不能在*src*中匹配到*rock*,下面的`switch`会跳到`default`语句.
 
 改进办法:
 
-1. 利用choices数组中固定rock来获取index number,但是因为html中元素的background-src是跨文件的,所以从choices中获得字符位置远小于src中需求的字符位置.
+1. 利用`choices`数组中固定rock来获取index number,但是因为html中元素的`background-src`是跨文件的,所以从choices中获得字符位置远小于src中需求的字符位置.
 
-由1想到既然url不一样,那我就把src地址切割,利用string方法很容易实现,slice(初始位置,结束位置),我们所有的src值都是一个url,通过选找最后的'/'来确定一个索引,而我们需要一个5中情况下能特定的结果,而每种情况对应单词的第二个字母是完全不同的,所以src.slice(src.lastIndexOf('/') +1 , src.lastIndexOf('/') + 2);获取我们判断需要的特定字符,在匹配switch,完成判断过程,具体实现参考源码.
+由1想到既然url不一样,那我就把src地址切割,利用string方法很容易实现,slice(初始位置,结束位置),我们所有的src值都是一个url,通过选找最后的'/'来确定一个索引,而我们需要一个5中情况下能特定的结果,而每种情况对应单词的第二个字母是完全不同的,所以`src.slice(src.lastIndexOf('/') +1 , src.lastIndexOf('/') + 2)`;获取我们判断需要的特定字符,在匹配switch,完成判断过程,具体实现参考源码.
 
 
 
